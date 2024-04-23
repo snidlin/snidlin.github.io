@@ -1,6 +1,4 @@
 html {
-  height: 100%;
-  width: 100%;
   background-color: black;
   color: white;
 }
@@ -12,6 +10,38 @@ html {
   justify-content: center;
   align-items: center;
   background-color: #666;
+}
+
+.ads {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  object-fit: contain;
+}
+
+.credit-links {
+  color: crimson;
+}
+
+.gif {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  max-height: 200px;
+  object-fit: contain;
+}
+
+.fa-circle-info {
+  font-size: 180%;
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  color: black;
+}
+p {
+  font-size: 22px;
 }
 
 .show {
@@ -71,16 +101,16 @@ html {
   display: flex;
   flex-direction: row;
   width: 100%;
-  min-height: 100%;
+  height: 100%;
 }
 
 .fakeads {
   order: 1;
   flex: 20%;
-  background-color: limegreen;
+  background-color: greenyellow;
   color: black;
   padding: 6px;
-  min-height: 100%;
+  min-height: 100vh;
 }
 
 .mainbody {
@@ -93,9 +123,10 @@ html {
 }
 
 .sidebar {
+  position: relative;
   order: 3;
   flex: 20%;
-  background-color: limegreen;
+  background-color: greenyellow;
   color: black;
   padding: 6px;
   min-height: 100%;
@@ -105,7 +136,7 @@ html {
   display: none;
   min-width: 100%;
   min-height: 200px;
-  background-color: limegreen;
+  background-color: greenyellow;
   color: black;
   border: 4px black solid;
   padding: 6px;
@@ -114,12 +145,19 @@ html {
 @media screen and (max-width: 700px) {
   .fakeads {
     display: none;
+    
   }
   .foot {
     display: block;
+    position: relative;
   }
-  .sidebar {
+  .sidebar {position: relative;
     order: 2;
+    flex: 20%;
+    background-color: greenyellow;
+    color: black;
+    padding: 6px;
+    min-height: 100%;
   }
   .mainbody {
     order: 3;
